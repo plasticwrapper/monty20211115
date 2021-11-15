@@ -1,5 +1,10 @@
+require_relative '../lib/monty.rb'
+
 describe Monty do
   describe '#initialize' do
-    it 'sets up the doors'
+    let(:game) { Monty.new }
+    it 'sets up the doors' do
+      expect(game.doors).to_be
+    end
   end
 end
